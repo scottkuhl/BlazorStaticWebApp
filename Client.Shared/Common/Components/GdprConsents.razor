@@ -1,0 +1,11 @@
+﻿<GdprBanner @ref="_gdprBanner" ConsentDetails="@_gdprConsents">
+	<Content>
+		<MudPaper Class="fixed rounded pa-2" Style="@($"color:{Theme.Palette.SuccessLighten}; background:{Theme.Palette.Dark}; bottom: 40px; right: 8px; width: 50%;")">
+			<MudText Typo="Typo.body1" Class="ma-2">
+				@Localizer["This website uses cookies to ensure you get the best experience on our website."]
+			</MudText>   
+			<MudButton OnClick="async () => await _gdprBanner.AcceptAll()" Color="Color.Primary">@Localizer["Agree"]</MudButton>
+			<MudButton OnClick="async () => await _gdprBanner.RejectAll()" Color="Color.Error">@Localizer["Disagree"]</MudButton>
+		</MudPaper>
+	</Content>
+</GdprBanner>

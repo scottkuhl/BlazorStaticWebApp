@@ -1,0 +1,46 @@
+﻿@page "/admin/movies/edit"
+@page "/admin/movies/edit/{id:guid}"
+
+@attribute [Authorize(Roles = Constants.AdminRole)]
+
+@if ((IsNew || Movie != null) && !IsLoading)
+{
+    @if (IsNew)
+    {
+        <PageTitle>@Localizer["Create Movie"] - @Localizer["App Name"]</PageTitle>
+        <HeadContent>
+            <meta name="description" content="@Localizer["Movie Edit Page Meta Description"]" />
+        </HeadContent>
+
+        <MudText Typo="Typo.h3" Class="mb-6">@Localizer["Create Movie"]</MudText>
+    }
+    else
+    {
+        <PageTitle>@Movie.Title - @Localizer["App Name"]</PageTitle>
+        <HeadContent>
+            <meta name="description" content="@Movie.Summary" />
+        </HeadContent>
+
+        <MudText Typo="Typo.h3" Class="mb-6">@Movie.Title</MudText>
+    }
+
+    <section style="margin: 0 auto;">
+        <EditForm Model="Movie" OnValidSubmit="SaveAsync">
+            <DataAnnotationsValidator />
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Title" @bind-Value="Movie.Title" For="@(() => Movie.Title)" />
+                    <MudNumericField Label="Year" @bind-Value="Movie.Year" For="@(() => Movie.Year)" Min="@AzureStaticWebApp.Shared.Models.Movie.MinYear" Max="@AzureStaticWebApp.Shared.Models.Movie.MaxYear" />
+                    <MudTextField Label="Summary" @bind-Value="Movie.Summary" For="@(() => Movie.Summary)" Lines="4" />
+                    <ImageUpload OnChange="SetImageUrl" ImageUrl="@Movie.PosterImageUrl" />
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" StartIcon="@Icons.Material.Filled.Save" Disabled="@IsSubmitting">@Localizer["Save"]</MudButton>
+                    <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Error" Class="ml-6" StartIcon="@Icons.Material.Filled.Delete" OnClick="DeleteAsync">@Localizer["Delete"]</MudButton>
+                </MudCardActions>
+            </MudCard>
+            <ValidationSummary />
+        </EditForm>
+        <br />
+    </section>
+}

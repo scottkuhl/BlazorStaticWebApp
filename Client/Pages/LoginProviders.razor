@@ -1,0 +1,28 @@
+﻿@page "/login-providers"
+
+<PageTitle>@Localizer["Sign In"] - @Localizer["App Name"]</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="@Localizer["Login Providers Page Meta Description"]" />
+</HeadContent>
+
+@{
+    var providers = new Dictionary<string, string[]>
+    {
+        { "Microsoft", new string[2] { "/.auth/login/aad", Icons.Custom.Brands.Microsoft } }
+        // If you add more providers, add more purge links on the privacy page.
+    };
+}
+
+<MudText Typo="Typo.h3" Class="pb-4">@Localizer["Sign In"]</MudText>
+
+    @foreach(var provider in providers)
+    {
+        <MudGrid>
+            <MudItem sm="12" md="9" lg="6">
+                <MudButton Link="@provider.Value[0]" Variant="Variant.Filled" EndIcon="@provider.Value[1]" Color="Color.Primary">
+                    @Localizer["Sign in with"] @provider.Key
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+    }

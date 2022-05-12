@@ -1,0 +1,15 @@
+﻿@using AzureStaticWebApp.Client.Shared.Common.Pages.Error
+
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly" OnNavigateAsync="OnNavigateAsync" AdditionalAssemblies="LazyLoadedAssemblies">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        </Found>
+        <NotFound>
+            <PageTitle>@Localizer["Not Found"]</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <NotFound />
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>

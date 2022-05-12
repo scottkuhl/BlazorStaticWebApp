@@ -1,0 +1,20 @@
+﻿@page "/movies"
+
+@using AzureStaticWebApp.Shared.Responses.Movies
+
+<PageTitle>@Localizer["Movies"] - @Localizer["App Name"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@Localizer["Movies Page Meta Description"]" />
+</HeadContent>
+
+<Virtualize Context="movie" ItemsProvider="@LoadData" ItemSize="150" OverscanCount="10">
+    <MudGrid>
+        <MudItem>
+            <MudImage Src="@movie.PosterImageUrl" Alt="@movie.Title" Elevation="25" Class="rounded-lg" Height="150"/>
+        </MudItem>
+        <MudItem>
+            <MudText Typo="Typo.h6">@movie.Title</MudText>
+            <MudText Typo="Typo.body1">@movie.Year</MudText>
+        </MudItem>
+    </MudGrid>
+</Virtualize>

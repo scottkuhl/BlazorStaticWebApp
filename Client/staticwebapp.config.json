@@ -1,0 +1,25 @@
+{
+  "routes": [
+    {
+      "route": "/api/manage/*",
+      "allowedRoles": [ "administrator" ]
+    },
+    {
+      "route": "/.auth/login/github",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/login/twitter",
+      "statusCode": 404
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "globalHeaders": {
+    "Content-Security-Policy": "default-src https: localhost:* ws://localhost:* 'unsafe-inline' 'unsafe-eval'; object-src 'none'",
+    "Referrer-Policy": "no-referrer",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "X-Frame-Options": "DENY"
+  }
+}

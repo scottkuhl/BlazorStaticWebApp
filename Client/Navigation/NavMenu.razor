@@ -1,0 +1,23 @@
+﻿<MudNavMenu Color="Color.Primary" Bordered="true" Rounded="true" Class="pa-2">
+    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">@Localizer["Home"]</MudNavLink>
+    <MudNavLink Href="/error/404" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Map">@Localizer["Lost"]</MudNavLink>
+    <MudNavLink Href="/error/lost" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.MapsHomeWork">@Localizer["Really Lost"]</MudNavLink>
+    <MudNavLink Href="/error" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Error">@Localizer["Error"]</MudNavLink>
+    <MudNavLink Href="/error/unauthorized" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Security">@Localizer["Unauthorized"]</MudNavLink>
+    <MudNavLink Href="/privacy" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.PrivacyTip">@Localizer["Privacy"]</MudNavLink>
+    <MudNavLink Href="/movies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Movie">@Localizer["Movies"]</MudNavLink>
+    <AuthorizeView Roles="@Constants.AdminRole">
+        <Authorized>
+            <MudDivider Class="my-8"/>
+            <MudNavLink Href="/admin/movies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Movie">@Localizer["Movie Admin"]</MudNavLink>
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView>
+        <Authorized>
+            <MudDivider Class="my-8"/>
+            <MudNavLink Href="/.auth/logout?post_logout_redirect_uri=/" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Logout">@Localizer["Sign Out"]</MudNavLink>
+        </Authorized>
+    </AuthorizeView>
+    <div class="pb-16" />
+    <CultureSelector />
+</MudNavMenu>

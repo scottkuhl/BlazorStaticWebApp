@@ -1,0 +1,15 @@
+{
+  "commands": {
+    "StaticWebApp": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c StaticWebApp.cmd"
+    },
+    "CosmosDB": {
+      "fileName": "powershell.exe",
+      "workingDirectory": ".",
+      "arguments": "-ExecutionPolicy Bypass -NonInteractive -File CosmosDB.ps1"
+    }
+  },
+  "-vs-binding": { "ProjectOpened": [ "StaticWebApp", "CosmosDB" ] }
+}

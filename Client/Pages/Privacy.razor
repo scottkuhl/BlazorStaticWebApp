@@ -1,0 +1,33 @@
+﻿@page "/privacy"
+
+<PageTitle>@Localizer["Privacy"] - @Localizer["App Name"]</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="@Localizer["Privacy Page Meta Description"]" />
+</HeadContent>
+
+<MudText Typo="Typo.h1">@Localizer["Terms"]</MudText>
+
+<MudText Typo="Typo.h2">@Localizer["Terms of Service"]</MudText>
+
+<MudText Typo="Typo.body1">
+    TODO: Include your own <a href="https://www.termsofservicegenerator.net/">terms of service</a>.   
+</MudText>
+
+<MudText Typo="Typo.h2">@Localizer["Privacy Policy"]</MudText>
+
+<MudText Typo="Typo.body1">
+    TODO: Include your own <a href="https://www.gdprprivacypolicy.net/">privacy policy</a>.   
+</MudText>
+
+<MudText Typo="Typo.h2">@Localizer["Do Not Sell My Info"]</MudText>
+
+<MudText Typo="Typo.body1">
+    TODO: Include your own <a href="https://www.privacypolicies.com/blog/create-display-do-not-sell-my-personal-information-page/">do not sell my personal information</a>.   
+</MudText>
+
+<AuthorizeView>
+    <Authorized>
+        <MudButton Variant="Variant.Filled" Color="Color.Error" StartIcon="@Icons.Material.Filled.Delete" OnClick="() => DeleteAsync()">@Localizer["Delete My Data"]</MudButton>        
+    </Authorized>
+</AuthorizeView>

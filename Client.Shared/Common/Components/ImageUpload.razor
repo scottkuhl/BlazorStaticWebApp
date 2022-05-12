@@ -1,0 +1,12 @@
+﻿<InputFile id="fileInput" OnChange="UploadImageAsync" hidden />
+
+<MudButton HtmlTag="label" Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Filled.CloudUpload" Class="my-3" for="fileInput">
+    @Localizer["Upload Image"]
+</MudButton>
+
+@if(ImageUrl != null)
+{
+    <div>
+        <img src="@ImageUrl" style="width:300px" />
+    </div>
+}
