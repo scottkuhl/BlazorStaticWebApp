@@ -20,19 +20,19 @@ public class Movie : Model
 
     public string Summary
     {
-        get { return _summary; }
-        set { _summary = new HtmlSanitizer().Sanitize(value); }
+        get => _summary;
+        set => _summary = new HtmlSanitizer().Sanitize(value);
     }
 
     [Required(ErrorMessage = "Title is required.")]
     [MaxLength(200, ErrorMessage = "Title must be 200 characters or less.")]
     public string Title
     {
-        get { return _title; }
-        set { _title = HttpUtility.HtmlEncode(value); }
+        get => _title;
+        set => _title = HttpUtility.HtmlEncode(value);
     }
 
     [Required(ErrorMessage = "Year is required.")]
-    [Range(1890, 2120, ErrorMessage = "Year must be between 1890 and 2120")]
+    [Range(MinYear, MaxYear, ErrorMessage = "Year must be between 1890 and 2120")]
     public int Year { get; set; } = DateTime.Today.Year;
 }
