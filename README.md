@@ -9,7 +9,7 @@ Create stories for the following based on the application needs.
 
 1. Update this README (title, description, user experience).
 
-1. Rename the solution and all instances of the applicaiton name.
+1. Rename the solution and all instances of the application name.
 
 1. Add support channels (Discord, Email (SendGrid), GitHub Discussions, Reddit, Report Abuse).
 
@@ -79,14 +79,15 @@ Once you clone the project, open the solution in [Visual Studio 2022](https://vi
 
 ## User Experience
 
-- The user interface should adapt primary to **mobile and tablets**.
-The exception to this rule are admin pages and when a user is managing their data on their own when not with friends.
+EXAMPLE
 
-- The **voice and personality** of the application should feel fun and adult oriented, similar to what [Carrot](https://www.meetcarrot.com/weather/) does for weather apps.
+- The user interface should adapt primary to **mobile and tablets**.
+
+- The **voice and personality** of the application should feel fun.
 
 - Since we will be using MudBlazor, the application will follow **[Material Design](https://material.io/develop/web)** for the web guidelines.
 
-- Icons are from the Material Icon set in MudBlazor and **[Undraw](https://undraw.co/)** when required, custom assets will be created in the future.
+- Icons are from the Material Icon set in MudBlazor and **[Undraw](https://undraw.co/)** when required.
 
 ## Architecture
 
