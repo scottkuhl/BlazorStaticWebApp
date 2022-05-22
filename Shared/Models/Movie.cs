@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Shared.Common;
+﻿using AzureStaticWebApp.Common.Shared;
 using Ganss.XSS;
 using System.ComponentModel.DataAnnotations;
 using System.Web;
@@ -33,6 +33,6 @@ public class Movie : Model
     }
 
     [Required(ErrorMessage = "Year is required.")]
-    [Range(MinYear, MaxYear, ErrorMessage = "Year must be between 1890 and 2120")]
+    [Range(MinYear, MaxYear, ErrorMessage = "Year must be between 1890 and 2120.")]
     public int Year { get; set; } = DateTime.Today.Year;
 }

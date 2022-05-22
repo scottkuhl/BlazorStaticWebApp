@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using AzureStaticWebApp.Api.Common.Data;
+using AzureStaticWebApp.Common.Api.Data;
 using AzureStaticWebApp.Shared.Models;
 using AzureStaticWebApp.Shared.Responses.Movies;
 

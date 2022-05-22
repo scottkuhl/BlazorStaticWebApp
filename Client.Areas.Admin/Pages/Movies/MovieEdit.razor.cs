@@ -1,6 +1,6 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Components;
-using AzureStaticWebApp.Client.Shared.Common.Services;
-using AzureStaticWebApp.Client.Shared.Services;
+﻿using AzureStaticWebApp.Client.Shared.Services;
+using AzureStaticWebApp.Common.Client.Components;
+using AzureStaticWebApp.Common.Client.Services;
 using AzureStaticWebApp.Shared.Models;
 using AzureStaticWebApp.Shared.Resources;
 using Microsoft.AspNetCore.Components;
@@ -19,8 +19,8 @@ public partial class MovieEdit : IDisposable
     [Inject] public IStringLocalizer<Resource> Localizer { get; set; } = default!;
     [Inject] public NavigationManager Nav { get; set; } = default!;
     [Inject] public IMovieHttpService Service { get; set; } = default!;
+    [Inject] public IServiceProvider Services { get; set; } = default!;
     [Inject] public ISnackbar Snackbar { get; set; } = default!;
-
     private bool IsLoading { get; set; } = true;
     private bool IsNew { get; set; } = true;
     private bool IsSubmitting { get; set; }

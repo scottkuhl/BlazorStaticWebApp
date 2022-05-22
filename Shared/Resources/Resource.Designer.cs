@@ -115,7 +115,7 @@ namespace AzureStaticWebApp.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Delete My Data.
         /// </summary>
         public static string Delete_My_Data {
             get {
@@ -385,34 +385,6 @@ namespace AzureStaticWebApp.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Something went wrong. Please try again in a few minutes or contact support..
-        /// </summary>
-        public static string Something_went_wrong__Please_try_again_in_a_few_minutes_or_contact_support_ {
-            get {
-                return ResourceManager.GetString("Something went wrong. Please try again in a few minutes or contact support.", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Something went wrong with our cloud services. Please try again in a few minutes or contact support..
-        /// </summary>
-        public static string Something_went_wrong_with_our_cloud_services__Please_try_again_in_a_few_minutes_or_contact_support_ {
-            get {
-                return ResourceManager.GetString("Something went wrong with our cloud services. Please try again in a few minutes o" +
-                        "r contact support.", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sorry, there&apos;s nothing at this address..
-        /// </summary>
-        public static string Sorry__there_s_nothing_at_this_address_ {
-            get {
-                return ResourceManager.GetString("Sorry, there\'s nothing at this address.", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Terms.
         /// </summary>
         public static string Terms {
@@ -427,15 +399,6 @@ namespace AzureStaticWebApp.Shared.Resources {
         public static string Terms_of_Service {
             get {
                 return ResourceManager.GetString("Terms of Service", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This website uses cookies to ensure you get the best experience on our website..
-        /// </summary>
-        public static string This_website_uses_cookies_to_ensure_you_get_the_best_experience_on_our_website_ {
-            get {
-                return ResourceManager.GetString("This website uses cookies to ensure you get the best experience on our website.", resourceCulture);
             }
         }
         
@@ -481,15 +444,6 @@ namespace AzureStaticWebApp.Shared.Resources {
         public static string Yes {
             get {
                 return ResourceManager.GetString("Yes", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to You are not authorized to perform this action..
-        /// </summary>
-        public static string You_are_not_authorized_to_perform_this_action_ {
-            get {
-                return ResourceManager.GetString("You are not authorized to perform this action.", resourceCulture);
             }
         }
     }

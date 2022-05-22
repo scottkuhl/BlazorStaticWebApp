@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using AzureStaticWebApp.Api.Common.Data;
-using AzureStaticWebApp.Api.Common.Exceptions;
-using AzureStaticWebApp.Shared.Common.Requests;
-using AzureStaticWebApp.Shared.Common.Responses;
-using AzureStaticWebApp.Shared.Common.Services;
+using AzureStaticWebApp.Common.Api.Data;
+using AzureStaticWebApp.Common.Api.Exceptions;
+using AzureStaticWebApp.Common.Shared.Requests;
+using AzureStaticWebApp.Common.Shared.Responses;
+using AzureStaticWebApp.Common.Shared.Services;
 using AzureStaticWebApp.Shared.Models;
 using AzureStaticWebApp.Shared.Responses.Movies;
 using Bogus;
@@ -153,6 +153,6 @@ public sealed class MovieRepository : CosmosDbRepository<MovieEntity>, IMovieRep
     private async Task<MovieEntity> ExistsAsync(Guid id, CancellationToken cancellationToken)
     {
         var entity = await GetAsync(id.ToString(), id.ToString(), cancellationToken);
-        return entity is null ? throw new NotFoundException<Movie>(id) : entity;
+        return entity ?? throw new NotFoundException<Movie>(id);
     }
 }

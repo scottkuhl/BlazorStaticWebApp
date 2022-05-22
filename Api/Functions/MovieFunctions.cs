@@ -1,7 +1,7 @@
-using AzureStaticWebApp.Api.Common.Functions;
-using AzureStaticWebApp.Api.Common.Validation;
 using AzureStaticWebApp.Api.Data.Movies;
-using AzureStaticWebApp.Shared.Common.Responses;
+using AzureStaticWebApp.Common.Api.Functions;
+using AzureStaticWebApp.Common.Api.Validation;
+using AzureStaticWebApp.Common.Shared.Responses;
 using AzureStaticWebApp.Shared.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

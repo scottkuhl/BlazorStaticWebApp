@@ -2,6 +2,7 @@
 
 This template is an example and starting point for creating a Azure Static Web App based on Blazor.
 It goes further than the Blazor Starter provided by Microsoft.
+The demo uses a basic movie list viewer with a separate lazy loaded area for administration.
 
 ## TO DO
 
@@ -22,6 +23,12 @@ Create stories for the following based on the application needs.
 1. Add communication channels (Blog, Newsletter).
 
 1. Update the privacy policy page.
+
+### Tips to Reduce Complexity
+
+1. Consider replacing the Resource file usage with plain text if you are only going to support one language.
+
+1. Remove the Lazy Loaded assemblies if the application is not large.
 
 ## Getting Started
 
@@ -91,9 +98,11 @@ EXAMPLE
 
 ## Architecture
 
-- **Client**: The Blazor WebAssembly sample application
+- **Common**: Common functionality that is not application specific is located in separate projects.
 
 - **Api**: A C# Azure Functions API, which the Blazor application will call
+
+- **Client**: The Blazor WebAssembly sample application
 
 - **Shared**: A C# class library with a shared data model between the Blazor and Functions application
 

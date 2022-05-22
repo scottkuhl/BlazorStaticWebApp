@@ -1,6 +1,6 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Services;
-using AzureStaticWebApp.Client.Shared.Services;
-using AzureStaticWebApp.Shared.Common.Requests;
+﻿using AzureStaticWebApp.Client.Shared.Services;
+using AzureStaticWebApp.Common.Client.Services;
+using AzureStaticWebApp.Common.Shared.Requests;
 using AzureStaticWebApp.Shared.Resources;
 using AzureStaticWebApp.Shared.Responses.Movies;
 using Microsoft.AspNetCore.Components;
@@ -14,9 +14,8 @@ public partial class Movies : IDisposable
     private readonly CancellationTokenSource TokenSource = new();
 
     [Inject] public HttpInterceptorService? Interceptor { get; set; }
-    [Inject] public IMovieHttpService Service { get; set; } = default!;
     [Inject] public IStringLocalizer<Resource> Localizer { get; set; } = default!;
-
+    [Inject] public IMovieHttpService Service { get; set; } = default!;
     private int TotalSize { get; set; }
 
     public void Dispose()

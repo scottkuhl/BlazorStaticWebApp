@@ -1,0 +1,8 @@
+﻿@using System.Globalization
+
+<MudSelect T="CultureInfo" Label="@Localizer["CultureInfo"]" Variant="Variant.Text" Dense="true" @bind-Value="Culture">
+    @foreach (var culture in cultures)
+    {
+        <MudSelectItem T="CultureInfo" Value="@culture.Key">@culture.Value</MudSelectItem>
+    }
+</MudSelect>
