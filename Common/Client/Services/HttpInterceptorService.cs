@@ -1,9 +1,9 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Exceptions;
+﻿using AzureStaticWebApp.Common.Client.Exceptions;
 using Microsoft.AspNetCore.Components;
 using System.Net;
 using Toolbelt.Blazor;
 
-namespace AzureStaticWebApp.Client.Shared.Common.Services;
+namespace AzureStaticWebApp.Common.Client.Services;
 
 public class HttpInterceptorService
 {

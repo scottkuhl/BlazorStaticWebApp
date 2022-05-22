@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Services;
+﻿using AzureStaticWebApp.Common.Client.Services;
 using AzureStaticWebApp.Common.Shared.Requests;
 using AzureStaticWebApp.Common.Shared.Responses;
 using AzureStaticWebApp.Shared.Models;

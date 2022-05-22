@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Components;
+﻿using AzureStaticWebApp.Common.Client.Components;
 using AzureStaticWebApp.Shared.Resources;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;

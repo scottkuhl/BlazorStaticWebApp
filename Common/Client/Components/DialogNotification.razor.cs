@@ -1,9 +1,9 @@
-﻿using AzureStaticWebApp.Shared.Resources;
+﻿using AzureStaticWebApp.Common.Shared.Resources;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 using MudBlazor;
 
-namespace AzureStaticWebApp.Client.Shared.Common.Components;
+namespace AzureStaticWebApp.Common.Client.Components;
 
 public partial class DialogNotification
 {

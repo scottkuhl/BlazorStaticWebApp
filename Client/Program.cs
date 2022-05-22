@@ -1,7 +1,7 @@
 using AzureStaticWebApp.Client;
-using AzureStaticWebApp.Client.Shared.Common.Extensions;
-using AzureStaticWebApp.Client.Shared.Common.Services;
 using AzureStaticWebApp.Client.Shared.Services;
+using AzureStaticWebApp.Common.Client.Extensions;
+using AzureStaticWebApp.Common.Client.Services;
 using Majorsoft.Blazor.Components.GdprConsent;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;

@@ -1,6 +1,6 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Components;
-using AzureStaticWebApp.Client.Shared.Common.Services;
-using AzureStaticWebApp.Client.Shared.Services;
+﻿using AzureStaticWebApp.Client.Shared.Services;
+using AzureStaticWebApp.Common.Client.Components;
+using AzureStaticWebApp.Common.Client.Services;
 using AzureStaticWebApp.Common.Shared.Requests;
 using AzureStaticWebApp.Shared.Resources;
 using AzureStaticWebApp.Shared.Responses.Movies;

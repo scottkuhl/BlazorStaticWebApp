@@ -1,7 +1,7 @@
 ﻿using Polly;
 using System.Text.Json;
 
-namespace AzureStaticWebApp.Client.Shared.Common.Services;
+namespace AzureStaticWebApp.Common.Client.Services;
 
 public interface IHttpClientService
 {

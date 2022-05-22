@@ -1,12 +1,12 @@
-﻿using AzureStaticWebApp.Client.Shared.Common.Services;
-using AzureStaticWebApp.Shared.Resources;
+﻿using AzureStaticWebApp.Common.Client.Services;
+using AzureStaticWebApp.Common.Shared.Resources;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.Extensions.Localization;
 using MudBlazor;
 using System.Net.Http.Headers;
 
-namespace AzureStaticWebApp.Client.Shared.Common.Components;
+namespace AzureStaticWebApp.Common.Client.Components;
 
 public partial class ImageUpload : IDisposable
 {

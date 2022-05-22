@@ -30,7 +30,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Client.Areas.Admin\Client.Areas.Admin.csproj" />
-		<ProjectReference Include="..\Client.Shared\Client.Shared.csproj" />
+		<ProjectReference Include="..\Common\Client\Common.Client.csproj" />
 		<ProjectReference Include="..\Shared\Shared.csproj" />
 	</ItemGroup>
 

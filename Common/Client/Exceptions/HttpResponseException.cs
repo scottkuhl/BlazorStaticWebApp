@@ -1,4 +1,4 @@
-﻿namespace AzureStaticWebApp.Client.Shared.Common.Exceptions;
+﻿namespace AzureStaticWebApp.Common.Client.Exceptions;
 
 public class HttpResponseException : Exception
 {

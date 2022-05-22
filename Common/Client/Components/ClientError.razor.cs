@@ -1,11 +1,11 @@
-﻿using AzureStaticWebApp.Shared.Resources;
+﻿using AzureStaticWebApp.Common.Shared.Resources;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
 
-namespace AzureStaticWebApp.Client.Shared.Common.Components;
+namespace AzureStaticWebApp.Common.Client.Components;
 
 public partial class ClientError
 {
-    [Inject] public IStringLocalizer<Resource> Localizer { get; set; } = default!;
     [EditorRequired, Parameter] public Exception ErrorContext { get; set; } = default!;
+    [Inject] public IStringLocalizer<Resource> Localizer { get; set; } = default!;
 }
