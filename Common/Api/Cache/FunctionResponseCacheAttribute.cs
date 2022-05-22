@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Net.Http.Headers;
 
-namespace AzureStaticWebApp.Api.Common.Cache;
+namespace AzureStaticWebApp.Common.Api.Cache;
 
 #pragma warning disable CS0618 // Type or member is obsolete
 

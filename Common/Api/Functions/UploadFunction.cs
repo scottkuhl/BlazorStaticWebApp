@@ -1,4 +1,4 @@
-using AzureStaticWebApp.Api.Common.Data;
+using AzureStaticWebApp.Common.Api.Data;
 using AzureStaticWebApp.Common.Shared.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +6,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using System.Net.Http.Headers;
 
-namespace AzureStaticWebApp.Api.Common.Functions;
+namespace AzureStaticWebApp.Common.Api.Functions;
 
 public class UploadFunction
 {

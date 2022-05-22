@@ -1,7 +1,7 @@
 ﻿using AzureStaticWebApp.Common.Shared.Responses;
 using Microsoft.Azure.Cosmos.Linq;
 
-namespace AzureStaticWebApp.Api.Common.Data;
+namespace AzureStaticWebApp.Common.Api.Data;
 
 public class VirtualList<T> : List<T>
 {

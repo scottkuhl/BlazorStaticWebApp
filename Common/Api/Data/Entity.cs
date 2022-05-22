@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace AzureStaticWebApp.Api.Common.Data;
+namespace AzureStaticWebApp.Common.Api.Data;
 
 public abstract class Entity
 {

@@ -1,9 +1,9 @@
-﻿using AzureStaticWebApp.Api.Common.Exceptions;
+﻿using AzureStaticWebApp.Common.Api.Exceptions;
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 
-namespace AzureStaticWebApp.Api.Common.Validation;
+namespace AzureStaticWebApp.Common.Api.Validation;
 
 public static class ModelValidation
 {

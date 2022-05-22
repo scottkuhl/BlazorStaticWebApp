@@ -2,9 +2,7 @@
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace AzureStaticWebApp.Api.Common.Data;
-
-// TODO: Background job that cleans up files no longer associated with records.
+namespace AzureStaticWebApp.Common.Api.Data;
 
 public interface IAzureStorageService
 {

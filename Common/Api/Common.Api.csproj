@@ -1,18 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-	
+<Project Sdk="Microsoft.NET.Sdk">
+
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
-		<AzureFunctionsVersion>v4</AzureFunctionsVersion>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<RootNamespace>AzureStaticWebApp.Api</RootNamespace>
+		<RootNamespace>AzureStaticWebApp.Common.Api</RootNamespace>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
 	</PropertyGroup>
-	
-	<ItemGroup>
-	  <Content Remove="C:\Users\scott\.nuget\packages\microsoft.azure.cosmos\3.24.0\contentFiles\any\netstandard2.0\ThirdPartyNotice.txt" />
-	</ItemGroup>
-	
+
 	<ItemGroup>
 		<PackageReference Include="AsyncFixer" Version="1.5.1">
 			<PrivateAssets>all</PrivateAssets>
@@ -35,20 +30,9 @@
 		</PackageReference>
 		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.18" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
-		<None Update="host.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="local.settings.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<CopyToPublishDirectory>Never</CopyToPublishDirectory>
-		</None>
+	  <ProjectReference Include="..\Shared\Common.Shared.csproj" />
 	</ItemGroup>
-	
-	<ItemGroup>
-		<ProjectReference Include="..\Common\Api\Common.Api.csproj" />
-		<ProjectReference Include="..\Shared\Shared.csproj" />
-	</ItemGroup>
-	
+
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace AzureStaticWebApp.Api.Common.Exceptions;
+namespace AzureStaticWebApp.Common.Api.Exceptions;
 
 [Serializable]
 public class BadRequestException : Exception

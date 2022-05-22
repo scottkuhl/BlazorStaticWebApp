@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AzureStaticWebApp.Api.Common.Validation;
+namespace AzureStaticWebApp.Common.Api.Validation;
 
 public class Validation<T>
 {

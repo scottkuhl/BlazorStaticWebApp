@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Net;
 using System.Reflection;
 
-namespace AzureStaticWebApp.Api.Common.Data;
+namespace AzureStaticWebApp.Common.Api.Data;
 
 public interface ICosmosDbRepository<T> where T : Entity
 {

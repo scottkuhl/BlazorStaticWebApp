@@ -2,7 +2,7 @@
 using Humanizer;
 using System.Diagnostics.CodeAnalysis;
 
-namespace AzureStaticWebApp.Api.Common.Exceptions;
+namespace AzureStaticWebApp.Common.Api.Exceptions;
 
 [Serializable]
 public class NotFoundException<T> : Exception where T : Model

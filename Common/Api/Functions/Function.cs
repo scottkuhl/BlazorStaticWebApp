@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Api.Common.Exceptions;
+﻿using AzureStaticWebApp.Common.Api.Exceptions;
 using AzureStaticWebApp.Common.Shared;
 using AzureStaticWebApp.Common.Shared.Requests;
 using AzureStaticWebApp.Common.Shared.Responses;
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace AzureStaticWebApp.Api.Common.Functions;
+namespace AzureStaticWebApp.Common.Api.Functions;
 
 #pragma warning disable CS0618 // Type or member is obsolete (IFunctionExceptionFilter is in preview)
 
