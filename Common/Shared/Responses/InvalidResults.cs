@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 
-namespace AzureStaticWebApp.Shared.Common.Responses;
+namespace AzureStaticWebApp.Common.Shared.Responses;
 
 public class InvalidResults
 {

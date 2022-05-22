@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Shared.Common.Responses;
+﻿using AzureStaticWebApp.Common.Shared.Responses;
 using Microsoft.Azure.Cosmos.Linq;
 
 namespace AzureStaticWebApp.Api.Common.Data;

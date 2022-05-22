@@ -1,7 +1,7 @@
 ﻿using AzureStaticWebApp.Client.Shared.Common.Components;
 using AzureStaticWebApp.Client.Shared.Common.Services;
 using AzureStaticWebApp.Client.Shared.Services;
-using AzureStaticWebApp.Shared.Common.Requests;
+using AzureStaticWebApp.Common.Shared.Requests;
 using AzureStaticWebApp.Shared.Resources;
 using AzureStaticWebApp.Shared.Responses.Movies;
 using Microsoft.AspNetCore.Components;

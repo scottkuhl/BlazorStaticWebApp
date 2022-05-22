@@ -1,4 +1,4 @@
-﻿namespace AzureStaticWebApp.Shared.Common.Responses;
+﻿namespace AzureStaticWebApp.Common.Shared.Responses;
 
 public class VirtualResponse<T>
 {

@@ -1,4 +1,4 @@
-﻿namespace AzureStaticWebApp.Shared.Common.Requests;
+﻿namespace AzureStaticWebApp.Common.Shared.Requests;
 
 public class VirtualParameters
 {

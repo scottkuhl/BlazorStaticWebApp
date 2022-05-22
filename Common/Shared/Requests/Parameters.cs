@@ -1,4 +1,4 @@
-﻿namespace AzureStaticWebApp.Shared.Common.Requests;
+﻿namespace AzureStaticWebApp.Common.Shared.Requests;
 
 public class Parameters
 {
@@ -14,7 +14,7 @@ public class Parameters
     public int PageSize
     {
         get => _pageSize;
-        set => _pageSize = (value > PageSizeOptions.Max()) ? PageSizeOptions.Max() : value;
+        set => _pageSize = value > PageSizeOptions.Max() ? PageSizeOptions.Max() : value;
     }
 
     public string Search

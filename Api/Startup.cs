@@ -2,7 +2,7 @@
 using AzureStaticWebApp.Api.Common.Data;
 using AzureStaticWebApp.Api.Data;
 using AzureStaticWebApp.Api.Data.Movies;
-using AzureStaticWebApp.Shared.Common.Services;
+using AzureStaticWebApp.Common.Shared.Services;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 

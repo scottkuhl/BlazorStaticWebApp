@@ -1,4 +1,4 @@
-﻿namespace AzureStaticWebApp.Shared.Common.Services;
+﻿namespace AzureStaticWebApp.Common.Shared.Services;
 
 public interface IDateTime
 {

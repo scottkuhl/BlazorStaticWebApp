@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using AzureStaticWebApp.Api.Common.Data;
 using AzureStaticWebApp.Api.Common.Exceptions;
-using AzureStaticWebApp.Shared.Common.Requests;
-using AzureStaticWebApp.Shared.Common.Responses;
-using AzureStaticWebApp.Shared.Common.Services;
+using AzureStaticWebApp.Common.Shared.Requests;
+using AzureStaticWebApp.Common.Shared.Responses;
+using AzureStaticWebApp.Common.Shared.Services;
 using AzureStaticWebApp.Shared.Models;
 using AzureStaticWebApp.Shared.Responses.Movies;
 using Bogus;

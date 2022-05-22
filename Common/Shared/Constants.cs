@@ -1,4 +1,4 @@
-﻿namespace AzureStaticWebApp.Shared.Common;
+﻿namespace AzureStaticWebApp.Common.Shared;
 
 public static class Constants
 {

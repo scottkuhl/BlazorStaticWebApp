@@ -1,5 +1,5 @@
 using AzureStaticWebApp.Api.Common.Data;
-using AzureStaticWebApp.Shared.Common.Services;
+using AzureStaticWebApp.Common.Shared.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;

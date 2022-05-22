@@ -1,5 +1,5 @@
-﻿using AzureStaticWebApp.Shared.Common.Requests;
-using AzureStaticWebApp.Shared.Common.Responses;
+﻿using AzureStaticWebApp.Common.Shared.Requests;
+using AzureStaticWebApp.Common.Shared.Responses;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Configuration;
 using System.Collections.ObjectModel;

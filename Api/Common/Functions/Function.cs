@@ -1,7 +1,7 @@
 ﻿using AzureStaticWebApp.Api.Common.Exceptions;
-using AzureStaticWebApp.Shared.Common;
-using AzureStaticWebApp.Shared.Common.Requests;
-using AzureStaticWebApp.Shared.Common.Responses;
+using AzureStaticWebApp.Common.Shared;
+using AzureStaticWebApp.Common.Shared.Requests;
+using AzureStaticWebApp.Common.Shared.Responses;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;

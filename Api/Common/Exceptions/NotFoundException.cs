@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Shared.Common;
+﻿using AzureStaticWebApp.Common.Shared;
 using Humanizer;
 using System.Diagnostics.CodeAnalysis;
 

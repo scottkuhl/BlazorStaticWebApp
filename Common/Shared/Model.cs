@@ -1,6 +1,6 @@
-﻿using AzureStaticWebApp.Shared.Common.Services;
+﻿using AzureStaticWebApp.Common.Shared.Services;
 
-namespace AzureStaticWebApp.Shared.Common;
+namespace AzureStaticWebApp.Common.Shared;
 
 public abstract class Model
 {

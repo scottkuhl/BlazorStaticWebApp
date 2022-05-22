@@ -1,6 +1,6 @@
 ﻿using AzureStaticWebApp.Client.Shared.Common.Services;
-using AzureStaticWebApp.Shared.Common.Requests;
-using AzureStaticWebApp.Shared.Common.Responses;
+using AzureStaticWebApp.Common.Shared.Requests;
+using AzureStaticWebApp.Common.Shared.Responses;
 using AzureStaticWebApp.Shared.Models;
 using AzureStaticWebApp.Shared.Responses.Movies;
 using Microsoft.AspNetCore.WebUtilities;
@@ -50,7 +50,7 @@ public class MovieHttpService : HttpClientService, IMovieHttpService
 
         using var response = await _httpRequestPolicy.ExecuteAsync(() => _httpClient.GetAsync(uri, cancellationToken));
 
-        response.EnsureSuccessStatusCode();
+        _ = response.EnsureSuccessStatusCode();
         var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
         return await JsonSerializer.DeserializeAsync<Movie>(stream, _options, cancellationToken) ?? new();
     }

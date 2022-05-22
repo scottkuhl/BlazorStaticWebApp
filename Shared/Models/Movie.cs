@@ -1,4 +1,4 @@
-﻿using AzureStaticWebApp.Shared.Common;
+﻿using AzureStaticWebApp.Common.Shared;
 using Ganss.XSS;
 using System.ComponentModel.DataAnnotations;
 using System.Web;
