@@ -117,116 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Add Movie" xml:space="preserve">
-    <value>Add Movie</value>
-  </data>
   <data name="Agree" xml:space="preserve">
     <value>Agree</value>
-  </data>
-  <data name="App Name" xml:space="preserve">
-    <value>Azure Static Web App</value>
-  </data>
-  <data name="App Name Short" xml:space="preserve">
-    <value>Azure SWA</value>
-  </data>
-  <data name="Create Movie" xml:space="preserve">
-    <value>Create Movie</value>
   </data>
   <data name="CultureInfo" xml:space="preserve">
     <value>Culture</value>
   </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Delete My Data" xml:space="preserve">
-    <value />
-  </data>
   <data name="Disagree" xml:space="preserve">
     <value>Disagree</value>
   </data>
-  <data name="Do Not Sell My Info" xml:space="preserve">
-    <value>Do Not Sell My Info</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="Example of a Blazor app running on an Azure Static Web App." xml:space="preserve">
-    <value>Example of a Blazor app running on an Azure Static Web App.</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="Image" xml:space="preserve">
-    <value>Image</value>
-  </data>
-  <data name="Index Page Meta Description" xml:space="preserve">
-    <value>Example of a Blazor app running as an Azure Static Web App.</value>
-  </data>
-  <data name="Light Dark Mode" xml:space="preserve">
-    <value>Light / Dark Mode</value>
-  </data>
-  <data name="Login Providers Page Meta Description" xml:space="preserve">
-    <value>Login using a third party provider.</value>
-  </data>
-  <data name="Lost" xml:space="preserve">
-    <value>Lost</value>
-  </data>
-  <data name="Movie Admin" xml:space="preserve">
-    <value>Movie Admin</value>
-  </data>
-  <data name="Movie Edit Page Meta Description" xml:space="preserve">
-    <value>Add a new movie.</value>
-  </data>
-  <data name="Movie List Page Meta Description" xml:space="preserve">
-    <value>Movie admin list.</value>
-  </data>
-  <data name="Movies" xml:space="preserve">
-    <value>Movies</value>
-  </data>
-  <data name="Movies Page Meta Description" xml:space="preserve">
-    <value>List of movies.</value>
-  </data>
-  <data name="Movies per page" xml:space="preserve">
-    <value>Movies per page</value>
-  </data>
-  <data name="New" xml:space="preserve">
-    <value>New</value>
-  </data>
   <data name="No" xml:space="preserve">
     <value>No</value>
-  </data>
-  <data name="Not Found" xml:space="preserve">
-    <value>Not Found</value>
-  </data>
-  <data name="Privacy" xml:space="preserve">
-    <value>Privacy</value>
-  </data>
-  <data name="Privacy Page Meta Description" xml:space="preserve">
-    <value>Placeholder page for privacy and terms of service.</value>
-  </data>
-  <data name="Privacy Policy" xml:space="preserve">
-    <value>Privacy Policy</value>
-  </data>
-  <data name="Really Lost" xml:space="preserve">
-    <value>Really Lost</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="Search" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="Sign In" xml:space="preserve">
-    <value>Sign In</value>
-  </data>
-  <data name="Sign in with" xml:space="preserve">
-    <value>Sign in with</value>
-  </data>
-  <data name="Sign Out" xml:space="preserve">
-    <value>Sign Out</value>
   </data>
   <data name="Something went wrong with our cloud services. Please try again in a few minutes or contact support." xml:space="preserve">
     <value>Something went wrong with our cloud services. Please try again in a few minutes or contact support.</value>
@@ -237,26 +138,11 @@
   <data name="Sorry, there's nothing at this address." xml:space="preserve">
     <value>Sorry, there's nothing at this address.</value>
   </data>
-  <data name="Terms" xml:space="preserve">
-    <value>Terms</value>
-  </data>
-  <data name="Terms of Service" xml:space="preserve">
-    <value>Terms of Service</value>
-  </data>
   <data name="This website uses cookies to ensure you get the best experience on our website." xml:space="preserve">
     <value>This website uses cookies to ensure you get the best experience on our website.</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>Title</value>
-  </data>
-  <data name="Unauthorized" xml:space="preserve">
-    <value>Unauthorized</value>
-  </data>
   <data name="Upload Image" xml:space="preserve">
     <value>Upload Image</value>
-  </data>
-  <data name="Year" xml:space="preserve">
-    <value>Year</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>

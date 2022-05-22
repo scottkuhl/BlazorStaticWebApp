@@ -132,14 +132,11 @@
   <data name="Create Movie" xml:space="preserve">
     <value>Create Movie</value>
   </data>
-  <data name="Culture" xml:space="preserve">
-    <value>Culture</value>
-  </data>
   <data name="Delete" xml:space="preserve">
     <value>Delete</value>
   </data>
   <data name="Delete My Data" xml:space="preserve">
-    <value />
+    <value>Delete My Data</value>
   </data>
   <data name="Disagree" xml:space="preserve">
     <value>Disagree</value>
@@ -228,23 +225,11 @@
   <data name="Sign Out" xml:space="preserve">
     <value>Sign Out</value>
   </data>
-  <data name="Something went wrong with our cloud services. Please try again in a few minutes or contact support." xml:space="preserve">
-    <value>Something went wrong with our cloud services. Please try again in a few minutes or contact support.</value>
-  </data>
-  <data name="Something went wrong. Please try again in a few minutes or contact support." xml:space="preserve">
-    <value>Something went wrong. Please try again in a few minutes or contact support.</value>
-  </data>
-  <data name="Sorry, there's nothing at this address." xml:space="preserve">
-    <value>Sorry, there's nothing at this address.</value>
-  </data>
   <data name="Terms" xml:space="preserve">
     <value>Terms</value>
   </data>
   <data name="Terms of Service" xml:space="preserve">
     <value>Terms of Service</value>
-  </data>
-  <data name="This website uses cookies to ensure you get the best experience on our website." xml:space="preserve">
-    <value>This website uses cookies to ensure you get the best experience on our website.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Title</value>
@@ -260,8 +245,5 @@
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
-  </data>
-  <data name="You are not authorized to perform this action." xml:space="preserve">
-    <value>You are not authorized to perform this action.</value>
   </data>
 </root>

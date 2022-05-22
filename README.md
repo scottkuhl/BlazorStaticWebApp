@@ -23,6 +23,12 @@ Create stories for the following based on the application needs.
 
 1. Update the privacy policy page.
 
+### Tips to Reduce Complexity
+
+1. Consider replacing the Resource file usage with plain text if you are only going to support one language.
+
+1. Remove the Lazy Loaded assemblies if the application is not large.
+
 ## Getting Started
 
 1. Install the **latest version** of [Visual Studio](https://visualstudio.microsoft.com/).
