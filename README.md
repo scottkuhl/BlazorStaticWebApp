@@ -12,6 +12,8 @@ Create stories for the following based on the application needs.
 
 1. Rename the solution and all instances of the application name.
 
+1. Remove the example menu items that demonstrate features.
+
 1. Add support channels (Discord, Email (SendGrid), GitHub Discussions, Reddit, Report Abuse).
 
 1. Add revenue (Ads, Affiliate Links, Paid Accounts, Patreon, Merchandise, Revenue Cat).
@@ -100,11 +102,11 @@ EXAMPLE
 
 - **Common**: Common functionality that is not application specific is located in separate projects.
 
-- **Api**: A C# Azure Functions API, which the Blazor application will call
+- **Api**: A C# Azure Functions API, which the Blazor application will call.
 
-- **Client**: The Blazor WebAssembly sample application
+- **Client**: The Blazor WebAssembly sample application.
 
-- **Shared**: A C# class library with a shared data model between the Blazor and Functions application
+- **Shared**: A C# class library with a shared data model between the Blazor and Functions application.
 
 ### Api
 
@@ -149,6 +151,8 @@ Anything that is thrown outside of all of these will trigger the error UI in the
 
 - **Localization**: Resource files are available for multiple language support.
 The default language is based on the browser, but a component is available that allows the user to change their language.
+
+- **Navigation Menu**: The side navigation switches to include bottom navigation on smaller screens.
 
 - **Privacy**: A sample privacy page is included as well as a [GDPR cookie compliance banner](https://github.com/majorimi/blazor-components/blob/master/.github/docs/GdprConsent.md).
 
