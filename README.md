@@ -6,7 +6,17 @@ The demo uses a basic movie list viewer with a separate lazy loaded area for adm
 
 ## TO DO
 
-Create stories for the following based on the application needs.
+### Azure
+
+1. Create an Azure Storage account.
+
+1. Create an Azure Cosmos DB account.
+
+1. Create an Azure Static Web App and connect it to your new repository.
+
+1. Update the settings in your new Azure SWA to include the storage and database connection strings.  The names for these values are in the local.settings.json file in the API project.
+
+### Project Changes
 
 1. Update this README (title, description, user experience).
 
@@ -14,15 +24,7 @@ Create stories for the following based on the application needs.
 
 1. Remove the example menu items that demonstrate features.
 
-1. Add support channels (Discord, Email (SendGrid), GitHub Discussions, Reddit, Report Abuse).
-
-1. Add revenue (Ads, Affiliate Links, Paid Accounts, Patreon, Merchandise, Revenue Cat).
-
-1. Custom app icons and images.
-
-1. Help (Wiki, [Tango](https://chrome.google.com/webstore/detail/tango-screenshots-trainin/lggdbpblkekjjbobadliahffoaobaknh)).
-
-1. Add communication channels (Blog, Newsletter).
+1. Use custom app icons and images.
 
 1. Update the privacy policy page.
 
@@ -31,6 +33,18 @@ Create stories for the following based on the application needs.
 1. Consider replacing the Resource file usage with plain text if you are only going to support one language.
 
 1. Remove the Lazy Loaded assemblies if the application is not large.
+
+### Production Ready Apps
+
+Consider the following to make you application production ready:
+
+1. Add support channels (Discord, Email, GitHub Discussions, Reddit, Report Abuse).
+
+1. Add revenue (Ads, Affiliate Links, Paid Accounts, Patreon, Merchandise, Revenue Cat).
+
+1. Add Help (Wiki, [Tango](https://chrome.google.com/webstore/detail/tango-screenshots-trainin/lggdbpblkekjjbobadliahffoaobaknh)).
+
+1. Add communication channels (Blog, Newsletter).
 
 ## Getting Started
 
