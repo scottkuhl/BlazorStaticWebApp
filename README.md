@@ -243,6 +243,8 @@ There is an assumption that you are already familiar with C# and ASP.NET Core.
 
 - **[Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/)**: Azure Static Web Apps allows you to build modern web applications that automatically publish to the web as your code changes.
 
+- **[Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/)**: The Static Web Apps (SWA) CLI is an open-source commandline tool that streamlines local development and deployment for Azure Static Web Apps.
+
 - **[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)**: Azure Functions is a cloud service available on-demand that provides all the continually updated infrastructure and resources needed to run your applications. You focus on the pieces of code that matter most to you, and Functions handles the rest. Functions provides serverless compute for Azure. You can use Functions to build web APIs, respond to database changes, process IoT streams, manage message queues, and more.
 
 - **[Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/)**: Fast NoSQL database with SLA-backed speed and availability, automatic and instant scalability, and open-source APIs for MongoDB and Cassandra. 
