@@ -6,21 +6,25 @@ The demo uses a basic movie list viewer with a separate lazy loaded area for adm
 
 ## TO DO
 
-Create stories for the following based on the application needs.
+### Azure
+
+1. Create an Azure Storage account.
+
+1. Create an Azure Cosmos DB account.
+
+1. Create an Azure Static Web App and connect it to your new repository.
+
+1. Update the settings in your new Azure SWA to include the storage and database connection strings.  The names for these values are in the local.settings.json file in the API project.
+
+### Project Changes
 
 1. Update this README (title, description, user experience).
 
 1. Rename the solution and all instances of the application name.
 
-1. Add support channels (Discord, Email (SendGrid), GitHub Discussions, Reddit, Report Abuse).
+1. Remove the example menu items that demonstrate features.
 
-1. Add revenue (Ads, Affiliate Links, Paid Accounts, Patreon, Merchandise, Revenue Cat).
-
-1. Custom app icons and images.
-
-1. Help (Wiki, [Tango](https://chrome.google.com/webstore/detail/tango-screenshots-trainin/lggdbpblkekjjbobadliahffoaobaknh)).
-
-1. Add communication channels (Blog, Newsletter).
+1. Use custom app icons and images.
 
 1. Update the privacy policy page.
 
@@ -29,6 +33,18 @@ Create stories for the following based on the application needs.
 1. Consider replacing the Resource file usage with plain text if you are only going to support one language.
 
 1. Remove the Lazy Loaded assemblies if the application is not large.
+
+### Production Ready Apps
+
+Consider the following to make you application production ready:
+
+1. Add support channels (Discord, Email, GitHub Discussions, Reddit, Report Abuse).
+
+1. Add revenue (Ads, Affiliate Links, Paid Accounts, Patreon, Merchandise, Revenue Cat).
+
+1. Add Help (Wiki, [Tango](https://chrome.google.com/webstore/detail/tango-screenshots-trainin/lggdbpblkekjjbobadliahffoaobaknh)).
+
+1. Add communication channels (Blog, Newsletter).
 
 ## Getting Started
 
@@ -100,11 +116,11 @@ EXAMPLE
 
 - **Common**: Common functionality that is not application specific is located in separate projects.
 
-- **Api**: A C# Azure Functions API, which the Blazor application will call
+- **Api**: A C# Azure Functions API, which the Blazor application will call.
 
-- **Client**: The Blazor WebAssembly sample application
+- **Client**: The Blazor WebAssembly sample application.
 
-- **Shared**: A C# class library with a shared data model between the Blazor and Functions application
+- **Shared**: A C# class library with a shared data model between the Blazor and Functions application.
 
 ### Api
 
@@ -149,6 +165,8 @@ Anything that is thrown outside of all of these will trigger the error UI in the
 
 - **Localization**: Resource files are available for multiple language support.
 The default language is based on the browser, but a component is available that allows the user to change their language.
+
+- **Navigation Menu**: The side navigation switches to include bottom navigation on smaller screens.
 
 - **Privacy**: A sample privacy page is included as well as a [GDPR cookie compliance banner](https://github.com/majorimi/blazor-components/blob/master/.github/docs/GdprConsent.md).
 
@@ -238,6 +256,8 @@ There is an assumption that you are already familiar with C# and ASP.NET Core.
 - **[MudBlazor](https://mudblazor.com/)**: MudBlazor is an ambitious Material Design component framework for Blazor with an emphasis on ease of use and clear structure.
 
 - **[Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/)**: Azure Static Web Apps allows you to build modern web applications that automatically publish to the web as your code changes.
+
+- **[Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/)**: The Static Web Apps (SWA) CLI is an open-source commandline tool that streamlines local development and deployment for Azure Static Web Apps.
 
 - **[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/)**: Azure Functions is a cloud service available on-demand that provides all the continually updated infrastructure and resources needed to run your applications. You focus on the pieces of code that matter most to you, and Functions handles the rest. Functions provides serverless compute for Azure. You can use Functions to build web APIs, respond to database changes, process IoT streams, manage message queues, and more.
 
