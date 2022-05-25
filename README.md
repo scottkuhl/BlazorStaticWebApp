@@ -22,8 +22,6 @@ The demo uses a basic movie list viewer with a separate lazy loaded area for adm
 
 1. Rename the solution and all instances of the application name.
 
-1. Remove the example menu items that demonstrate features.
-
 1. Use custom app icons and images.
 
 1. Update the privacy policy page.
