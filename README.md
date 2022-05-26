@@ -62,7 +62,7 @@ Consider the following to make you application production ready:
 
 1. Install the **[CodeMaid](https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaidVS2022)** extension.
 
-1. Install the **[Code Cleanup on Save](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave)** extension.  The clean up profile should have all options applied.  Unfortunately at this time, these options can't be stored in a solution.
+1. Enable **Run Code Cleanup profile on Save** in Text Editor > Code Cleanup.  The clean up profile should have all options applied.  Unfortunately at this time, these options can't be stored in a solution.
 
 *Optional: Setup Windows Terminal to close the process exits, fails or crashes instead of closing only when the process exits successfully.
 This will close the Azure Functions window when you stop debugging.*
