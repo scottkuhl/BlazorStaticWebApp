@@ -34,11 +34,11 @@ public interface IMovieRepository
 
 public sealed class MovieRepository : CosmosDbRepository<MovieEntity>, IMovieRepository
 {
-    private readonly IAzureStorageService _azureStorageService;
+    private readonly IAzureBlobStorageService _azureStorageService;
     private readonly IGuid _guid;
     private readonly IMapper _mapper;
 
-    public MovieRepository(IAzureStorageService azureStorageService, IMapper mapper, IGuid guid, IConfiguration configuration) : base(configuration)
+    public MovieRepository(IAzureBlobStorageService azureStorageService, IMapper mapper, IGuid guid, IConfiguration configuration) : base(configuration)
     {
         _azureStorageService = azureStorageService;
         _guid = guid;

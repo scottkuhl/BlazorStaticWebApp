@@ -1,6 +1,7 @@
 ﻿using AzureStaticWebApp.Api;
 using AzureStaticWebApp.Api.Data;
 using AzureStaticWebApp.Api.Data.Movies;
+using AzureStaticWebApp.Api.Data.SimpleMovies;
 using AzureStaticWebApp.Common.Api.Data;
 using AzureStaticWebApp.Common.Shared.Services;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
@@ -18,9 +19,10 @@ public class Startup : FunctionsStartup
         _ = builder.Services.AddAutoMapper(typeof(Startup));
         _ = builder.Services.AddTransient<IDateTime, DateTimeService>();
         _ = builder.Services.AddTransient<IGuid, GuidService>();
-        _ = builder.Services.AddScoped<IAzureStorageService, AzureStorageService>();
+        _ = builder.Services.AddScoped<IAzureBlobStorageService, AzureBlobStorageService>();
 
         _ = builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+        _ = builder.Services.AddScoped<ISimpleMovieRepository, SimpleMovieRepository>();
 
         Migration.Setup(builder);
     }

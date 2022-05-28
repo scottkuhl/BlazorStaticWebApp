@@ -40,6 +40,7 @@ builder.Services.AddGdprConsent();
 builder.Services.AddLocalization();
 
 builder.Services.AddScoped<IMovieHttpService, MovieHttpService>();
+builder.Services.AddScoped<ISimpleMovieHttpService, SimpleMovieHttpService>();
 
 builder.UseLoadingBar();
 

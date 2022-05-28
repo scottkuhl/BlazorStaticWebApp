@@ -2,10 +2,12 @@
     <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">@Localizer["Home"]</MudNavLink>
     <MudNavLink Href="/privacy" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.PrivacyTip">@Localizer["Privacy"]</MudNavLink>
     <MudNavLink Href="/movies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Movie">@Localizer["Movies"]</MudNavLink>
+    <MudNavLink Href="/simplemovies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Movie">@Localizer["Movies"]</MudNavLink>
     <AuthorizeView Roles="@Constants.AdminRole">
         <Authorized>
             <MudDivider Class="my-8"/>
             <MudNavLink Href="/admin/movies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Movie">@Localizer["Movie Admin"]</MudNavLink>
+            <MudNavLink Href="/admin/simplemovies" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Movie">@Localizer["Movie Admin"]</MudNavLink>
         </Authorized>
     </AuthorizeView>
     <AuthorizeView>

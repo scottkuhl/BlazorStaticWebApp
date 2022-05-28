@@ -1,4 +1,5 @@
 ﻿using AzureStaticWebApp.Api.Data.Movies;
+using AzureStaticWebApp.Api.Data.SimpleMovies;
 using Bogus;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,7 @@ public static class Migration
     {
         var serviceProvider = builder.Services.BuildServiceProvider();
         var movieRepository = serviceProvider.GetRequiredService<IMovieRepository>();
+        var simpleMovieRepository = serviceProvider.GetRequiredService<ISimpleMovieRepository>();
 
         var environment = Environment.GetEnvironmentVariable("AZURE_FUNCTIONS_ENVIRONMENT");
         if (environment != "Development")
@@ -22,5 +24,7 @@ public static class Migration
 
         movieRepository.InitializeCollection();
         movieRepository.SeedTestData();
+
+        simpleMovieRepository.SeedTestData();
     }
 }

@@ -130,6 +130,11 @@ EXAMPLE
 A common repository is setup for shared logic.
 Bogus will seed test data in the local environment on startup.
 
+    - **Data (Simple)**: A simplified version of the data is stored in Azure Table Storage.
+    Only very basic filtering is supported.
+    Most paging, filtering, searching, and sorting must be done using in memory logic or storing duplicates of the data.
+    It can however be more cost efficent than Cosmos DB.
+
 - **Exceptions**: Common custom exceptions are available.  Functions inherit from a base Function class which implements global exception handling and logging which can be monitored by Application Insights.
 
 - **Lists**: List based queries support server side paging, filtering, searching, sorting and return meta data about the results as either a pagable or virtualized list.
@@ -246,6 +251,8 @@ There is an assumption that you are already familiar with C# and ASP.NET Core.
 - **[Blazor GDPR Consent Controls](https://github.com/majorimi/blazor-components/blob/master/.github/docs/GdprConsent.md)**: Blazor injectable service and components that renders a customizable GDPR consent Banner or Popup which stores the user's choice to Browser storage.
 
 - **[Localization in Blazor WebAssembly Applications](https://code-maze.com/localization-in-blazor-webassembly-applications/)**: In this article, we are going to learn how to implement localization in Blazor WebAssembly applications. We are going to start with a simple introduction to Globalization and Localization. Then, we are going to show you how to implement localization in Blazor WebAssembly applications and also how to enable users to choose the culture they want.
+
+- **[Azure Table Storage with ASP.NET Core](https://code-maze.com/azure-table-storage-aspnetcore/)**: We’ll learn how to create an ASP.NET Core Web API for performing CRUD operations on NoSQL data with the Table Storage in the back-end. 
 
 ### Documentation
 

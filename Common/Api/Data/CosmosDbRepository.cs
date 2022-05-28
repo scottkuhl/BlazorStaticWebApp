@@ -10,7 +10,7 @@ using System.Reflection;
 
 namespace AzureStaticWebApp.Common.Api.Data;
 
-public interface ICosmosDbRepository<T> where T : Entity
+public interface ICosmosDbRepository<T> where T : CosmosEntity
 {
     Task AddAsync(T entity, string partitionKey, CancellationToken cancellationToken);
 
@@ -25,7 +25,7 @@ public interface ICosmosDbRepository<T> where T : Entity
     Task UpdateAsync(T entity, string partitionKey, CancellationToken cancellationToken);
 }
 
-public class CosmosDbRepository<T> : ICosmosDbRepository<T> where T : Entity
+public class CosmosDbRepository<T> : ICosmosDbRepository<T> where T : CosmosEntity
 {
     protected readonly Container _container;
     private const string DatabaseName = "AzureStaticWebApp";
