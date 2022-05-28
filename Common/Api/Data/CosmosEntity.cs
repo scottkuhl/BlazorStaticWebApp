@@ -2,7 +2,7 @@
 
 namespace AzureStaticWebApp.Common.Api.Data;
 
-public abstract class Entity
+public abstract class CosmosEntity
 {
     [SuppressMessage("Style", "IDE1006:Naming Styles", Justification = "Lowercase required by Cosmos DB.")]
     public string id { get; set; } = string.Empty;

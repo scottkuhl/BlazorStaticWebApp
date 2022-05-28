@@ -10,10 +10,10 @@ namespace AzureStaticWebApp.Common.Api.Functions;
 
 public class UploadFunction
 {
-    private readonly IAzureStorageService _azureStorageService;
+    private readonly IAzureBlobStorageService _azureStorageService;
     private readonly IGuid _guid;
 
-    public UploadFunction(IAzureStorageService azureStorageService, IGuid guid)
+    public UploadFunction(IAzureBlobStorageService azureStorageService, IGuid guid)
     {
         _azureStorageService = azureStorageService;
         _guid = guid;

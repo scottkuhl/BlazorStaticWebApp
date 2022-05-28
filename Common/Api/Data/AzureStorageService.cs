@@ -4,18 +4,18 @@ using Microsoft.Extensions.Configuration;
 
 namespace AzureStaticWebApp.Common.Api.Data;
 
-public interface IAzureStorageService
+public interface IAzureBlobStorageService
 {
     Task DeleteFileAsync(string fileName, CancellationToken cancellationToken);
 
     Task<string> UploadFileAsync(Stream fileStream, string fileName, string contentType, CancellationToken cancellationToken);
 }
 
-public class AzureStorageService : IAzureStorageService
+public class AzureBlobStorageService : IAzureBlobStorageService
 {
     private readonly BlobContainerClient _container;
 
-    public AzureStorageService(IConfiguration configuration)
+    public AzureBlobStorageService(IConfiguration configuration)
     {
         _container = new BlobContainerClient(configuration["AzureStorage"], "file-container");
         _container.CreateIfNotExistsAsync().Wait();
