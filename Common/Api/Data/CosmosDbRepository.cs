@@ -28,7 +28,7 @@ public interface ICosmosDbRepository<T> where T : CosmosEntity
 public class CosmosDbRepository<T> : ICosmosDbRepository<T> where T : CosmosEntity
 {
     protected readonly Container _container;
-    private const string DatabaseName = "AzureStaticWebApp";
+    public const string DatabaseName = "AzureStaticWebApp";
     private readonly string _account;
     private readonly string _key;
 
@@ -41,9 +41,16 @@ public class CosmosDbRepository<T> : ICosmosDbRepository<T> where T : CosmosEnti
         _container = client.GetContainer(DatabaseName, GetContainerName());
     }
 
-    public Task AddAsync(T entity, string partitionKey, CancellationToken cancellationToken)
+    public async Task AddAsync(T entity, string partitionKey, CancellationToken cancellationToken)
     {
-        return _container.CreateItemAsync(entity, new PartitionKey(partitionKey), cancellationToken: cancellationToken);
+        try
+        {
+            var x = await _container.CreateItemAsync(entity, new PartitionKey(partitionKey), cancellationToken: cancellationToken);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
 
     public Task DeleteAsync(string id, string partitionKey, CancellationToken cancellationToken)

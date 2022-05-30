@@ -70,6 +70,10 @@ public abstract class Function : IFunctionExceptionFilter
             parameters.PageSize = pageSize;
         }
 
+        parameters.Search = req.Query["search"];
+
+        parameters.OrderBy = req.Query["orderBy"];
+
         return parameters;
     }
 

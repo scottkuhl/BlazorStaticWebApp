@@ -5,7 +5,8 @@
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "CosmosDb_Account": "https://localhost:8081",
     "CosmosDb_Key": "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
-    "AzureStorage": "UseDevelopmentStorage=true"
+    "AzureStorage": "UseDevelopmentStorage=true",
+    "AzureBlobContainer": "file-container"
   },
   "Host": {
     "LocalHttpPort": 7071,

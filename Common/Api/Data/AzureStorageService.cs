@@ -17,7 +17,7 @@ public class AzureBlobStorageService : IAzureBlobStorageService
 
     public AzureBlobStorageService(IConfiguration configuration)
     {
-        _container = new BlobContainerClient(configuration["AzureStorage"], "file-container");
+        _container = new BlobContainerClient(configuration["AzureStorage"], configuration["AzureBlobContainer"]);
         _container.CreateIfNotExistsAsync().Wait();
         _container.SetAccessPolicyAsync(PublicAccessType.Blob).Wait();
     }

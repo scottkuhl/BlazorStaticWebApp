@@ -120,6 +120,8 @@ EXAMPLE
 
 - **Shared**: A C# class library with a shared data model between the Blazor and Functions application.
 
+- **Tests**: An xUnit based automated test class library.
+
 ### Api
 
 - **Cache**: Basic response caching is available using a custom filter.
@@ -200,6 +202,14 @@ These are configured in the staticwebapp.config.json file in the Client project.
 - **Services**: A date / time and guid service are available to make automated testing easier.
 
 - **Validation**: If an invalid model is passed in a InvalidResults class is returned.
+
+### Tests
+
+- Tests are organized by creating a matching class name in the same namespace structure as the class under test.
+
+- The naming convention for tests follows the Method-Should-When pattern.
+
+- Tests are marked with traits to indicate whether they are a unit, integration or end-to-end test.
 
 ## Reference
 
