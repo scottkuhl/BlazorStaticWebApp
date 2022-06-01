@@ -175,6 +175,7 @@ The default language is based on the browser, but a component is available that 
 
 - **Progessive Wep App**: A starting manifest and service worker is setup that mirrors the default PWA template configuration but with Skip Waiting setup.
 Skip Waiting ensures that any new versions of a service worker will take over the page and become activated immediately.
+The SWA based authentication paths (/.auth/) have been excluded from caching.
 
 - **Security Headers**: Some headers have been added to make the application more secure by default.
 These are configured in the staticwebapp.config.json file in the Client project.
